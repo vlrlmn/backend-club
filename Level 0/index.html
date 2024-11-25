@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valerie's blog</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Homepage -->
+      <section class="heading">
+        <header class="hero">
+          <img src="pictures/travel/main.JPG" class="left" alt="Image 1">
+          <img src="pictures/travel/main2.jpeg" class="right" alt="Image 2">
+          <div class="overlay"></div>
+          <h1 class="author-title">Welcome to my world</h1>
+          <p class="author-subtitle">
+              Hi! This is Valerie's blog, where you can find my highlights on self-development, aesthetics, and life's celebration.
+          </p>
+        </header>
+        
+        <div class="explore-button">
+          <a href="newpage.html" class="button">Discover More</a>
+        </div>
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="#" id="articles-link">Articles</a></li>
+            <li><a href="#" id="menu-moodboard-btn">Moodboard</a></li>
+            <li><a href="#">Reach Out</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Articles page -->
+      <section id="articles-page" class="hidden">
+        <nav class="articles-nav">
+          <button id="back-homepage-btn">Homepage</button>
+          <div class="right-buttons">
+            <button id="moodboard-btn">Moodboard</button>
+            <button id="reach-out-btn">Reach out</button>
+            <button id="about-btn">About</button>
+          </div>
+        </nav>
+
+        <!-- Cover with articles-->
+        <div class="articles-cover">
+          <h1 class="cover-title">Articles</h1>
+        </div>
+
+        <!-- Filter -->
+        <nav class="categories-filter">
+          <div class="categories">
+            <button class="category-btn" data-category="All">All</button>
+            <button class="category-btn" data-category="Lifestyle">Lifestyle</button>
+            <button class="category-btn" data-category="Education">Education</button>
+            <button class="category-btn" data-category="Travel">Travel</button>
+          </div>
+          <input type="text" id="keyword-search" placeholder="Search articles by keyword..." />
+        </nav>
+
+        <div class="articles-container">
+          <div class="article-card">
+            <img src="image-url.jpg" class="card-img" alt="Article image">
+            <div class="article-card-content">
+                <h2>Article Title</h2>
+                <p>Article summary or content goes here.</p>
+                <span class="article-card-category">Category</span>
+            </div>
+        </div>
+        </div>
+        <!---------Article window-->
+        <div id="article-modal" class="article-modal">
+          <div class="modal-content">
+              <button class="close-modal">&times;</button>
+
+              <div class="article-cover">
+                <img src="" alt="cover" id="modal-article-cover">
+                <h2 id="modal-article-title">Article Title</h2>
+              </div>
+              <div class="modal-article-content">
+                  <p id="modal-article-text">Article content goes here...</p>
+              </div>
+          </div>
+      </div>
+      </section>
+      
+      <!-- ------Moodboard-->
+      <section id="moodboard-page" class="hidden">
+        <nav class="moodboard-nav">
+          <button id="back-homepage-btn-moodboard">Homepage</button>
+          <div class="right-buttons">
+            <button id="articles-btn">Articles</button>
+            <button id="reach-out-btn-moodboard">Reach Out</button>
+            <button id="about-btn-moodboard">About</button>
+          </div>
+        </nav>
+        <div class="moodboard-cover">
+          <h1 class="cover-title">Moodboard</h1>
+          <p class="cover-text">Coming Soon! This moodboard is in 
+            progress - soon you'll find an inspiring collection of 
+            beauty and creativity. Stay tuned!</p>
+        </div>
+        <div class="moodboard-content">
+          <div class="moodboard-grid">
+            <img src="pictures/covers/1.jpg" alt="cover1">
+            <img src="pictures/covers/2.jpeg" alt="cover2">
+            <img src="pictures/covers/3.jpeg" alt="cover3">
+            <img src="pictures/covers/4.jpeg" alt="cover4">
+            <img src="pictures/covers/5.jpeg" alt="cover5">
+            <img src="pictures/covers/6.jpeg" alt="cover6">
+            <img src="pictures/covers/7.jpeg" alt="cover7">
+            <img src="pictures/covers/8.jpeg" alt="cover8">
+            <img src="pictures/covers/9.jpeg" alt="cover9">
+            <img src="pictures/covers/10.jpeg" alt="cover10">
+            <img src="pictures/covers/11.jpeg" alt="cover11">
+            <img src="pictures/covers/12.jpeg" alt="cover12">
+            <img src="pictures/covers/13.jpeg" alt="cover13">
+            <img src="pictures/covers/14.jpeg" alt="cover14">
+            <img src="pictures/covers/15.jpeg" alt="cover15">
+            <img src="pictures/covers/16.jpeg" alt="cover16">
+            <img src="pictures/covers/17.jpeg" alt="cover17">
+            <img src="pictures/covers/18.jpeg" alt="cover18">
+            <img src="pictures/covers/19.jpeg" alt="cover19">
+            <img src="pictures/covers/20.jpeg" alt="cover20">
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+    <script src="script.js"></script>
+    <script src="articles.js"></script>
+  </body>
+</html>
